@@ -31,11 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 3. Active navigation link highlighting on scroll
-    const sections = document.querySelectorAll('main section[id]');
+    const sections = document.querySelectorAll('section[id]');
     const navLi = document.querySelectorAll('.nav-links li a');
 
     const highlightOptions = {
-      rootMargin: '-20% 0px -70% 0px'
+      rootMargin: '-20% 0px -70% 0px' // A "trigger line" in the viewport
     };
 
     const sectionObserver = new IntersectionObserver((entries) => {
@@ -72,8 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
     downloadButtons.forEach(button => {
         button.addEventListener('click', () => {
             const lang = button.getAttribute('data-lang');
-            langInput.value = lang; 
-            formMessage.textContent = ''; 
+            langInput.value = lang; // Store which language was clicked
+            formMessage.textContent = ''; // Clear any previous messages
             modal.style.display = 'flex';
         });
     });
@@ -89,24 +89,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     downloadForm.addEventListener('submit', (event) => {
-        event.preventDefault(); 
+        event.preventDefault(); // Stop the form from submitting traditionally
         
         const email = document.getElementById('emailInput').value;
         const lang = langInput.value;
         
+        // --- In a real application, you would send this email to your server ---
         console.log(`Email captured: ${email}, Language: ${lang}`);
-        
+        // ----------------------------------------------------------------------
+
+        // Show a success message
         formMessage.textContent = 'Obrigado! O seu download irá começar em breve.';
         formMessage.style.color = 'green';
         
+        // Simulate providing the download after a short delay
         setTimeout(() => {
+            // Create a temporary link to trigger the download
             const link = document.createElement('a');
-            link.href = fileMap[lang]; 
-            link.download = fileMap[lang].split('/').pop();
+            link.href = fileMap[lang]; // Get the correct file path
+            link.download = fileMap[lang].split('/').pop(); // Suggest a filename
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
             
+            // Close the modal
             modal.style.display = 'none';
             downloadForm.reset();
         }, 1500);
