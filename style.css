@@ -3,19 +3,20 @@
    ======================== */
 :root {
     --primary-color: #4A90E2; 
-    --dark-blue: #0D2F4F;
+    --dark-blue: #2c3e50; /* Updated dark blue/charcoal for new section */
     --text-color: #333;
+    --text-gray: #555; /* Lighter gray for paragraphs */
     --light-gray-bg: #f7f9fa;
+    --border-gray: #e0e0e0;
     --white-color: #FFFFFF;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { font-family: 'Montserrat', sans-serif; color: var(--text-color); line-height: 1.6; }
-.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 h1, h2, h3 { color: var(--dark-blue); margin-bottom: 1rem; font-weight: 700; }
-h2 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; }
-.section-subtitle { text-align: center; max-width: 800px; margin: 0 auto 3rem auto; font-size: 1.1rem; }
+.info-section { padding: 80px 0; }
 
 /* =======================
    HEADER & NAVIGATION
@@ -41,12 +42,24 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; }
 .cta-button { background-color: var(--primary-color); color: var(--white-color); padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: background-color 0.3s ease; border: none; cursor: pointer; }
 .cta-button:hover { background-color: #357ABD; }
 
-/* ... (Keep all the previous styles for .info-section, .reasons-grid, .opportunities-grid, etc.) ... */
-.info-section { padding: 80px 0; }
-.alternate-bg { background-color: var(--light-gray-bg); }
-.reasons-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+/* =======================
+   WHY INVEST SECTION (NEW STYLES)
+   ======================== */
+.why-invest-section { padding: 80px 0; background-color: #fff; }
+.why-invest-section h2 { text-align: center; font-size: 2.8rem; font-weight: 700; color: var(--dark-blue); margin-bottom: 1rem; }
+.why-invest-section .section-subtitle { text-align: center; max-width: 800px; margin: 0 auto 4rem auto; font-size: 1.1rem; color: var(--text-gray); line-height: 1.7; }
+.reasons-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem 4rem; }
 .reason-item { text-align: center; }
-.reason-item img { height: 50px; margin-bottom: 1rem; }
+.reason-item img { height: 38px; padding: 15px; border: 2px solid var(--border-gray); border-radius: 50%; margin-bottom: 1.5rem; }
+.reason-item h3 { font-size: 1.6rem; font-weight: 700; color: var(--dark-blue); margin-bottom: 0.75rem; }
+.reason-item p { font-size: 1rem; color: var(--text-gray); line-height: 1.6; }
+
+
+/* =======================
+   OTHER SECTIONS
+   ======================== */
+.alternate-bg { background-color: var(--light-gray-bg); }
+.info-section h2 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; }
 .opportunities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
 .opportunity-card { height: 400px; border-radius: 8px; overflow: hidden; position: relative; display: flex; align-items: flex-end; text-decoration: none; color: var(--white-color); background-size: cover; background-position: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .opportunity-card:hover { transform: scale(1.03); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
@@ -62,7 +75,7 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; }
 .download-buttons { margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; }
 .download-btn { background-color: #555; color: var(--white-color); padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: 700; transition: background-color 0.3s ease; border: none; cursor: pointer; }
 .download-btn:hover { background-color: #333; }
-.partners-logos { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 3rem; }
+.partners-logos { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 3rem; margin-top: 2rem; }
 .partners-logos img { max-height: 50px; filter: grayscale(100%); opacity: 0.7; transition: filter 0.3s, opacity 0.3s; }
 .partners-logos img:hover { filter: grayscale(0%); opacity: 1; }
 .site-footer-bottom { background-color: var(--dark-blue); color: var(--white-color); text-align: center; padding: 2rem 0; }
@@ -74,7 +87,6 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; }
    ======================== */
 .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
-
 .modal { display: none; position: fixed; z-index: 1001; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.6); align-items: center; justify-content: center; }
 .modal-content { background-color: var(--white-color); margin: auto; padding: 30px; border: 1px solid #888; width: 90%; max-width: 500px; border-radius: 8px; text-align: center; position: relative; animation: slide-down 0.5s ease-out; }
 .close-button { color: #aaa; position: absolute; top: 10px; right: 20px; font-size: 28px; font-weight: bold; cursor: pointer; }
@@ -89,7 +101,8 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; }
    ======================== */
 @media (max-width: 768px) {
     h1 { font-size: 2.2rem; }
-    h2 { font-size: 2rem; }
+    .why-invest-section h2 { font-size: 2rem; }
+    .reasons-grid { grid-template-columns: 1fr; gap: 3rem; }
     .content-split { flex-direction: column; }
     .nav-links { display: none; position: absolute; right: 0px; top: 65px; background-color: white; width: 100%; flex-direction: column; text-align: center; box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
     .nav-links.nav-active { display: flex; }
