@@ -18,12 +18,17 @@
         <div class="container">
             <nav class="main-nav">
                 <a href="#" class="logo">Investidor da Diáspora</a>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#why-invest">Porquê Investir</a></li>
                     <li><a href="#opportunities">Oportunidades</a></li>
                     <li><a href="#how-to-invest">Como Investir</a></li>
                     <li><a href="#download">Download</a></li>
                 </ul>
+                <div class="hamburger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </nav>
         </div>
     </header>
@@ -33,7 +38,7 @@
         HERO SECTION
         ======================== -->
         <section class="hero" id="hero">
-            <div class="hero-content">
+            <div class="hero-content fade-in">
                 <h1>ÉS MEMBRO DA DIÁSPORA CABO-VERDIANA E GOSTARIAS DE CONHECER AS MELHORES OPORTUNIDADES DE INVESTIMENTO EM CABO VERDE?</h1>
                 <p>O "Guia do Investidor da Diáspora" visa encorajar os membros da diáspora cabo-verdiana a investir no seu país de origem, contribuindo para o crescimento económico sustentável e a criação de empregos de qualidade.</p>
                 <a href="#download" class="cta-button">Fazer Download do Guia</a>
@@ -41,53 +46,22 @@
         </section>
 
         <!-- =======================
-        WHY INVEST SECTION (ALL 8 POINTS)
+        WHY INVEST SECTION
         ======================== -->
         <section class="info-section" id="why-invest">
             <div class="container">
-                <h2>Porquê investir em Cabo Verde?</h2>
-                <p class="section-subtitle">Cabo Verde tem um ambiente de negócios atrativo e propício ao investimento, com diversas vantagens estratégicas que fortalecem a confiança dos investidores:</p>
+                <h2 class="fade-in">Porquê investir em Cabo Verde?</h2>
+                <p class="section-subtitle fade-in">Cabo Verde tem um ambiente de negócios atrativo e propício ao investimento, com diversas vantagens estratégicas que fortalecem a confiança dos investidores:</p>
                 <div class="reasons-grid">
-                    <div class="reason-item">
-                        <img src="./images/icon-location.svg" alt="Ícone de localização">
-                        <h3>Localização Estratégica</h3>
-                        <p>Situado no cruzamento entre Europa, África e América, Cabo Verde é um ponto de conexão para comércio e negócios internacionais.</p>
-                    </div>
-                    <div class="reason-item">
-                        <img src="./images/icon-stability.svg" alt="Ícone de estabilidade">
-                        <h3>Estabilidade Política e Social</h3>
-                        <p>O país é reconhecido pela sua democracia consolidada, paz social e governança estável, fatores fundamentais para a segurança do investimento.</p>
-                    </div>
-                    <div class="reason-item">
-                        <img src="./images/icon-infra.svg" alt="Ícone de infraestrutura">
-                        <h3>Infraestruturas Modernas</h3>
-                        <p>Investimentos contínuos em portos, aeroportos, estradas e redes energéticas garantem boas condições para o desenvolvimento empresarial.</p>
-                    </div>
-                    <div class="reason-item">
-                        <img src="./images/icon-euro.svg" alt="Ícone do Euro">
-                        <h3>Paridade com o Euro</h3>
-                        <p>A moeda nacional (Escudo Cabo-verdiano) está indexada ao Euro, proporcionando estabilidade cambial para investidores estrangeiros.</p>
-                    </div>
-                    <div class="reason-item">
-                        <img src="./images/icon-climate.svg" alt="Ícone de clima">
-                        <h3>Clima Estável e Sem Riscos de Saúde</h3>
-                        <p>Cabo Verde possui um clima tropical moderado e estável, sem registro de epidemias ou riscos significativos à saúde pública.</p>
-                    </div>
-                    <div class="reason-item">
-                        <img src="./images/icon-capital.svg" alt="Ícone de capital">
-                        <h3>Livre Movimentação de Capitais</h3>
-                        <p>Políticas económicas permitem a transferência de fundos e repatriação de capitais sem restrições, favorecendo investimentos internacionais.</p>
-                    </div>
-                    <div class="reason-item">
-                        <img src="./images/icon-law.svg" alt="Ícone de lei">
-                        <h3>Estado de Direito e Transparência</h3>
-                        <p>O país mantém um forte compromisso com o Estado de Direito, promovendo um ambiente seguro e previsível para negócios.</p>
-                    </div>
-                    <div class="reason-item">
-                        <img src="./images/icon-population.svg" alt="Ícone de população">
-                        <h3>População Jovem e Qualificada</h3>
-                        <p>Cabo Verde conta com uma população jovem e capacitada, com crescente qualificação técnica e profissional.</p>
-                    </div>
+                    <!-- Added .fade-in to each item for animation -->
+                    <div class="reason-item fade-in"><img src="./images/icon-location.svg" alt="Ícone"><h3>Localização Estratégica</h3><p>Situado no cruzamento entre Europa, África e América, é um ponto de conexão para comércio internacional.</p></div>
+                    <div class="reason-item fade-in"><img src="./images/icon-stability.svg" alt="Ícone"><h3>Estabilidade Política e Social</h3><p>O país é reconhecido pela sua democracia consolidada, paz social e governança estável.</p></div>
+                    <div class="reason-item fade-in"><img src="./images/icon-infra.svg" alt="Ícone"><h3>Infraestruturas Modernas</h3><p>Investimentos contínuos em portos, aeroportos, estradas e redes energéticas.</p></div>
+                    <div class="reason-item fade-in"><img src="./images/icon-euro.svg" alt="Ícone"><h3>Paridade com o Euro</h3><p>A moeda nacional (Escudo) está indexada ao Euro, proporcionando estabilidade cambial.</p></div>
+                    <div class="reason-item fade-in"><img src="./images/icon-climate.svg" alt="Ícone"><h3>Clima Estável e Sem Riscos de Saúde</h3><p>Clima tropical moderado e estável, sem registro de epidemias ou riscos significativos.</p></div>
+                    <div class="reason-item fade-in"><img src="./images/icon-capital.svg" alt="Ícone"><h3>Livre Movimentação de Capitais</h3><p>Políticas económicas permitem a transferência de fundos e repatriação de capitais sem restrições.</p></div>
+                    <div class="reason-item fade-in"><img src="./images/icon-law.svg" alt="Ícone"><h3>Estado de Direito e Transparência</h3><p>Forte compromisso com o Estado de Direito, promovendo um ambiente seguro e previsível.</p></div>
+                    <div class="reason-item fade-in"><img src="./images/icon-population.svg" alt="Ícone"><h3>População Jovem e Qualificada</h3><p>População jovem e capacitada, com crescente qualificação técnica e profissional.</p></div>
                 </div>
             </div>
         </section>
@@ -97,44 +71,14 @@
         ======================== -->
         <section class="info-section alternate-bg" id="opportunities">
             <div class="container">
-                <h2>Oportunidades de Negócio</h2>
+                <h2 class="fade-in">Oportunidades de Negócio</h2>
                 <div class="opportunities-grid">
-                    <a href="#" class="opportunity-card" style="background-image: url('./images/agronegocio.jpg');">
-                        <div class="card-overlay">
-                            <h3>Agronegócio</h3>
-                            <p>Produção agrícola, criação de gado e produção de alimentos.</p>
-                        </div>
-                    </a>
-                    <a href="#" class="opportunity-card" style="background-image: url('./images/industria.jpg');">
-                        <div class="card-overlay">
-                            <h3>Indústria</h3>
-                            <p>Transformação de produtos alimentares, produção de bebidas e têxteis.</p>
-                        </div>
-                    </a>
-                    <a href="#" class="opportunity-card" style="background-image: url('./images/economia-digital.jpg');">
-                        <div class="card-overlay">
-                            <h3>Economia Digital</h3>
-                            <p>Startups tecnológicas, serviços de TI e inovação digital.</p>
-                        </div>
-                    </a>
-                    <a href="#" class="opportunity-card" style="background-image: url('./images/turismo.jpg');">
-                        <div class="card-overlay">
-                            <h3>Turismo</h3>
-                            <p>Desenvolvimento de hotéis, ecoturismo, turismo cultural e de saúde.</p>
-                        </div>
-                    </a>
-                     <a href="#" class="opportunity-card" style="background-image: url('./images/economia-verde.jpg');">
-                        <div class="card-overlay">
-                            <h3>Economia Verde</h3>
-                            <p>Energias renováveis, gestão de resíduos e conservação ambiental.</p>
-                        </div>
-                    </a>
-                     <a href="#" class="opportunity-card" style="background-image: url('./images/economia-azul.jpg');">
-                        <div class="card-overlay">
-                            <h3>Economia Azul</h3>
-                            <p>Investimentos na pesca, aquacultura, e turismo marítimo.</p>
-                        </div>
-                    </a>
+                    <a href="#" class="opportunity-card fade-in" style="background-image: url('./images/agronegocio.jpg');"><div class="card-overlay"><h3>Agronegócio</h3><p>Produção agrícola, criação de gado e produção de alimentos.</p></div></a>
+                    <a href="#" class="opportunity-card fade-in" style="background-image: url('./images/industria.jpg');"><div class="card-overlay"><h3>Indústria</h3><p>Transformação de produtos alimentares, produção de bebidas e têxteis.</p></div></a>
+                    <a href="#" class="opportunity-card fade-in" style="background-image: url('./images/economia-digital.jpg');"><div class="card-overlay"><h3>Economia Digital</h3><p>Startups tecnológicas, serviços de TI e inovação digital.</p></div></a>
+                    <a href="#" class="opportunity-card fade-in" style="background-image: url('./images/turismo.jpg');"><div class="card-overlay"><h3>Turismo</h3><p>Desenvolvimento de hotéis, ecoturismo, turismo cultural e de saúde.</p></div></a>
+                    <a href="#" class="opportunity-card fade-in" style="background-image: url('./images/economia-verde.jpg');"><div class="card-overlay"><h3>Economia Verde</h3><p>Energias renováveis, gestão de resíduos e conservação ambiental.</p></div></a>
+                    <a href="#" class="opportunity-card fade-in" style="background-image: url('./images/economia-azul.jpg');"><div class="card-overlay"><h3>Economia Azul</h3><p>Investimentos na pesca, aquacultura, e turismo marítimo.</p></div></a>
                 </div>
             </div>
         </section>
@@ -144,22 +88,20 @@
         ======================== -->
         <section class="info-section" id="how-to-invest">
             <div class="container content-split">
-                <div class="text-content">
+                <div class="text-content fade-in">
                     <h2>Como Investir?</h2>
                     <p>Para investir em Cabo Verde, siga estes passos:</p>
                     <ol class="steps-list">
-                        <li><strong>Preparação:</strong> Pesquisar oportunidades de negócio e entender o mercado.</li>
+                        <li><strong>Preparação:</strong> Pesquisar oportunidades e entender o mercado.</li>
                         <li><strong>Planejamento:</strong> Desenvolver um plano de negócios detalhado.</li>
-                        <li><strong>Registro:</strong> Registrar a empresa na Casa do Cidadão e obter todas as licenças necessárias.</li>
-                        <li><strong>Financiamento:</strong> Explorar opções de financiamento, incluindo incentivos fiscais e subsídios.</li>
-                        <li><strong>Execução:</strong> Implementar o plano de negócios, contratar pessoal e iniciar operações.</li>
-                        <li><strong>Suporte Continuado:</strong> Utilizar serviços de apoio como a Cabo Verde TradeInvest e a Pró Empresa para obter orientação contínua e formação.</li>
+                        <li><strong>Registro:</strong> Registrar a empresa e obter as licenças necessárias.</li>
+                        <li><strong>Financiamento:</strong> Explorar opções, incentivos fiscais e subsídios.</li>
+                        <li><strong>Execução:</strong> Implementar o plano, contratar pessoal e iniciar operações.</li>
+                        <li><strong>Suporte Continuado:</strong> Utilizar serviços de apoio como a Cabo Verde TradeInvest.</li>
                     </ol>
                 </div>
-                <div class="image-collage">
-                    <img src="./images/how-to-1.jpg" alt="Paisagem de Cabo Verde">
-                    <img src="./images/how-to-2.jpg" alt="Praia e cidade em Cabo Verde">
-                    <img src="./images/how-to-3.jpg" alt="Caminhada nas montanhas">
+                <div class="image-collage fade-in">
+                    <img src="./images/how-to-1.jpg" alt="Paisagem"><img src="./images/how-to-2.jpg" alt="Praia"><img src="./images/how-to-3.jpg" alt="Caminhada">
                 </div>
             </div>
         </section>
@@ -169,34 +111,29 @@
         ======================== -->
         <section class="info-section alternate-bg" id="download">
             <div class="container content-split">
-                <div class="text-content">
+                <div class="text-content fade-in">
                     <h2>Download</h2>
-                    <p>Faça o download do "Guia do Investidor da Diáspora" para obter todas as informações necessárias para iniciar o seu investimento em Cabo Verde. O guia oferece um detalhamento completo das oportunidades de negócio, incentivos disponíveis, e os passos necessários para estabelecer e gerir um negócio com sucesso.</p>
+                    <p>Faça o download do "Guia do Investidor da Diáspora" para obter todas as informações necessárias para iniciar o seu investimento em Cabo Verde.</p>
                     <div class="download-buttons">
-                        <a href="#" class="download-btn">Português</a>
-                        <a href="#" class="download-btn">English</a>
-                        <a href="#" class="download-btn">French</a>
+                        <button class="download-btn" data-lang="pt">Português</button>
+                        <button class="download-btn" data-lang="en">English</button>
+                        <button class="download-btn" data-lang="fr">French</button>
                     </div>
                 </div>
-                <div class="image-content">
-                    <img src="./images/download-cover.jpg" alt="Capa do Guia do Investidor">
+                <div class="image-content fade-in">
+                    <img src="./images/download-cover.jpg" alt="Capa do Guia">
                 </div>
             </div>
         </section>
 
-         <!-- =======================
+        <!-- =======================
         PARTNERS SECTION
         ======================== -->
         <section class="info-section" id="partners">
             <div class="container">
-                <h2>Nossos Parceiros</h2>
-                <div class="partners-logos">
-                    <!-- Replace with your actual partner logos -->
-                    <img src="./images/logo-partner-1.png" alt="Logo Parceiro 1">
-                    <img src="./images/logo-partner-2.png" alt="Logo Parceiro 2">
-                    <img src="./images/logo-partner-3.png" alt="Logo Parceiro 3">
-                    <img src="./images/logo-partner-4.png" alt="Logo Parceiro 4">
-                    <img src="./images/logo-partner-5.png" alt="Logo Parceiro 5">
+                <h2 class="fade-in">Nossos Parceiros</h2>
+                <div class="partners-logos fade-in">
+                    <img src="./images/logo-partner-1.png" alt="Logo"><img src="./images/logo-partner-2.png" alt="Logo"><img src="./images/logo-partner-3.png" alt="Logo"><img src="./images/logo-partner-4.png" alt="Logo"><img src="./images/logo-partner-5.png" alt="Logo">
                 </div>
             </div>
         </section>
@@ -211,6 +148,26 @@
             <p>Precisa de ajuda? <a href="mailto:contato@investidordadiaspora.cv">contato@investidordadiaspora.cv</a></p>
         </div>
     </footer>
+
+    <!-- =======================
+    DOWNLOAD MODAL (Hidden by default)
+    ======================== -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h3>Download do Guia</h3>
+            <p>Por favor, insira o seu email para receber o link para download.</p>
+            <form id="downloadForm">
+                <input type="email" id="emailInput" placeholder="seu.email@exemplo.com" required>
+                <input type="hidden" id="langInput" value="">
+                <button type="submit">Receber o Guia</button>
+            </form>
+            <p id="formMessage" class="form-message"></p>
+        </div>
+    </div>
+    
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
 
 </body>
 </html>
